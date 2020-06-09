@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body>
+    <p>Hello world</p>
+    <p class="intro">the dom in css is very useful</p>
+    <p class="intro">this example demonstartes the query selector all</p>
+    <p id="demo"></p>
+
+    <script>
+        var x = document.querySelectorAll("p.intro");
+        document.getElementById("demo").innerHTML = x[1].innerHTML;
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<body>
+    <h2>collections</h2>
+    <form id="frm">
+        firstname:
+        <input type="text" placeholder="fname">
+        lastname:
+        <input type="text" placeholder="lname">
+        <input type="submit" value="submit">
+    </form>
+
+    <button onclick = "func()">try it</button>
+    <p id="demo"></p>
+
+    <script>
+        function func(){
+            var x = document.forms["frm"];
+            var text = "";
+            var i;
+            for(i = 0;i < x.length;i++){
+                text += x.elements[i].value + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
